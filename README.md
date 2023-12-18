@@ -1,7 +1,7 @@
 
-# PyPlate - A boilerplate for new Python projects
+# PyPlate `simple` - A tiny boilerplate for new Python projects
 
-This template serves as a starting point for Python projects, including essential utilities, directory structure, and example code for various repetitive tasks.
+See <https://github.com/tollefj/pyplate>.
 
 # To build your own project
 
@@ -11,9 +11,7 @@ Simply click on the green "Use this template" button on the top of this page.
 
 ```bash
 git clone git@github.com:tollefj/pyplate.git MYPROJECT
-
 cd MYPROJECT
-
 git remote remove origin
 git remote add origin <your repo url>
 git push --set-upstream origin main
@@ -23,44 +21,17 @@ git push --set-upstream origin main
 
 ```bash
 make setup
-# optional tasks: {geo/graphs/image/ml/nlp/web}
-make install-req TASK=ml
-# do code changes :-)
 make run
-# did you write tests?
-make test
-```
-
-## Typing, linting and formatting
-
-```bash
-# typing
-make mypy
-# flake8
-make lint
-# format the code using `black` and `isort`
-make format
-# dry run:
-make format-check
 ```
 
 ## Directory Structure
 
 ```text
-├── docs/
-│ └── ...
-│
-├── requirements/
-│ ├── requirements.txt
-│ ├── requirements_ml.txt
-│ ├── requirements_web.txt
-│ └── ...
-│
 ├── src/
 │ ├── main.py
+│ ├── args.py
 │ ├── utils/
 │ │ └── ...
-│
-└── tests/
-│ └── ...
+│ ├── examples/
+│ │ └── ...
 ```
